@@ -37,19 +37,19 @@ function zerar(){
 
 function remover(){
     const indice = parseInt(indice.value);
-    for(let i=0; i<array.length; i++){
-         if(i==indice){
-             array.splice((indice-1),1)
+        if(indice>=1 || indice<=array.length){
+            array.splice((indice-1),1)
          } else {
-             break;
+             alert("índice não existe");
          }
-    }
+    
     mostrarLista();
     numeroInput.value="";
     numeroInput.focus();
 
     
 }
+
 
 function mostrarLista(){
     
